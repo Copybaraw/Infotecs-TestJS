@@ -1,0 +1,57 @@
+<!Doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Test</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="data_table.json"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!--Место для кода-->
+        <div class="container">
+            <div>
+                <div class="hide_column">
+                    <button class="hide_btn">Скрыть имя</button>
+                    <button class="hide_btn">Скрыть фамилию</button>
+                    <button class="hide_btn">Скрыть телефон</button>
+                    <button class="hide_btn">Скрыть описание</button>
+                    <button class="hide_btn">Скрыть цвет глаз</button>
+                </div>
+                <table class="table">
+                    <thead class="head-table">
+                        <tr>
+                            <th class="firstname num0" status="no-sort">Имя<img src=""></th>
+                            <th class="lastname num1" status="no-sort">Фамилия<img src=""></th>
+                            <th class="phone num2" status="no-sort">Телефон<img src=""></th>
+                            <th class="about num3" status="no-sort">Описание<img src=""></th>
+                            <th class="eyecolor num4" status="no-sort">Цвет глаз<img src=""></th>
+                        </tr>
+                    </thead>
+                    <tbody class="body-table"></tbody>
+                </table>
+                <div class="btn-pages"></div>
+            </div>
+            <div class="edit-info">
+                <form class="form">
+                    <label for="First-Name">Имя</label><input type="text" id="First-Name">
+                    <label for="Last-Name">Фамилия</label><input type="text" id="Last-Name">
+                    <label for="Phone">Телефон</label><input type="phone" id="Phone">
+                    <label for="About">Описание</label><input type="text" id="About">
+                    <label for="Eye-Color">Цвет глаз</label>
+                    <select id="Eye-Color">
+                        <option>green</option>
+                        <option>brown</option>
+                        <option>blue</option>
+                        <option>red</option>
+                    </select>
+                    <div class="submit-buttons">
+                        <input type="button" class="submit-btn btn-cancel" value="Отменить">
+                        <input type="button" class="submit-btn btn-save" value="Сохранить">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>
